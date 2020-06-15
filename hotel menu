@@ -1,0 +1,41 @@
+#include<stdio.h>
+main()
+{
+    int item,plates,amount;
+    printf("choice the item\n 1.pasta=179\n 2.pizza=239\n 3.burger=129\n 4.sandwich=149\n 5.frenchfries=99\n");
+    scanf("%d",&item);
+    printf("enter the no of plates\n");
+    scanf("%d",&plates);
+
+
+    switch(item)
+    {
+        case 1:
+        amount=179*plates;
+        printf("you choice pasta and the amount to be paid is %d\n",amount);
+        break;
+
+        case 2:
+        amount=239*plates;
+        printf("you choice pizza and the amount to be paid is %d\n",amount);
+        break;
+
+        case 3:
+        amount=129*plates;
+        printf("you choice burger and the amount to be paid is %d*\n",amount);
+        break;
+
+        case 4:
+        amount=149*plates;
+        printf("you choice sandwich and amount to be paid is %d",amount);
+        break;
+
+        case 5:
+        amount=99*plates;
+        printf("you choice french fries and the amount to be paid is %d\n",amount);
+        break;
+        default :printf("you choice item out of menu\n");
+
+
+    }
+}
